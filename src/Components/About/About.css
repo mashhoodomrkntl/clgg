@@ -1,0 +1,40 @@
+.about {
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+.about-left {
+    flex-basis: 40%;
+    position: relative;
+}
+.about-right {
+    flex-basis: 56%;
+}
+.about_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.play_icon {
+    position: absolute;
+    /* inset: 0; */
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column;
+    }
+    .about-left {
+        flex-basis: 100%;
+        margin: 20px;
+        order: 2;
+    }
+    .about-right {
+        flex-basis: 100%;
+    }
+}
